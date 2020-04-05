@@ -1,14 +1,19 @@
 public class Model {
-    String corporation,computer_model;
+    private String corporation,computerModel;
 
-    int Year_model;
+    public Model(String corporation,String computerModel){
 
-    public Model(String c,String c_m,int y_m){
-        corporation =c;
+        this.corporation =corporation;
+        this.computerModel = computerModel;
 
-        computer_model = c_m;
 
-        Year_model = y_m;
     }
 
+    public String getCorporation() {
+        return corporation;
+    }
+
+    public String getComputer_model() {
+        return computerModel;
+    }
 }

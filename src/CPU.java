@@ -1,18 +1,42 @@
 public class CPU {
-    String Model;
+    private String Model;
 
-    int year_cpu,generation;
+    private int yearCpu,generation;
 
-    double speed_cpu;
-    public CPU(String m,int y_c,int g,double s_c){
+    private double speedCpu;
+    public CPU(String m,int yC,int g,double sC){
+
         Model=m;
-
-        year_cpu=y_c;
-
+        yearCpu=yC;
         generation =g;
+        speedCpu=sC;
 
-        speed_cpu=s_c;
     }
+    public String getModel(){
+        return Model;
+    }
+
+    public int getYearCpu(){
+        return yearCpu;
+    }
+
+    public int getGeneration() {
+        return generation;
+    }
+
+    public void setGeneration(int i){
+        this.generation=generation;
+    }
+
+    public double getSpeedCpu() {
+        return speedCpu;
+    }
+
+    public void  setSpeedCpu(double speedCpu){
+        this.speedCpu=speedCpu;
+
+    }
+
 
 
 }

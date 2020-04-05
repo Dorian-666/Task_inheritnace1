@@ -1,9 +1,27 @@
 public class Storage {
-    int RAM,ROM;
+
+    private int ram,rom;
 
     public Storage(int ram,int rom){
-        RAM =ram;
-        ROM = rom;
 
+        this.ram=ram;
+        this.rom=rom;
+
+    }
+
+    public int getRam() {
+        return ram;
+    }
+
+    public int getRom() {
+        return rom;
+    }
+
+    public void setRam(int ram) {
+        this.ram=ram;
+    }
+
+    public void setRom(int rom) {
+        this.rom=rom;
     }
 }
