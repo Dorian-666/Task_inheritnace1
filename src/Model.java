@@ -1,19 +1,21 @@
 public class Model {
-    private String corporation,computerModel;
+    private String computerModel;
 
-    public Model(String corporation,String computerModel){
+    public Model(String computerModel){
 
-        this.corporation =corporation;
+
         this.computerModel = computerModel;
 
 
     }
 
-    public String getCorporation() {
-        return corporation;
-    }
+
 
     public String getComputer_model() {
         return computerModel;
+    }
+
+    public void setComputerModel(String computerModel) {
+        this.computerModel = computerModel;
     }
 }
